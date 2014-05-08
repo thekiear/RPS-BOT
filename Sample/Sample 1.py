@@ -3,18 +3,19 @@ Rock = 1
 Paper = 2
 Scissors = 3
 
+
 #Define the main function
 def main():
 
     #set control loop
     keep_going = 'Y'
+	
+	#set wins
+	computer_wins = 0
+	player_wins = 0
+	tie_score = 0
 
-
-    #set counter to zero
-    computer_wins = 0
-    player_wins = 0
-    tie_score = 0
-
+   
     #call display message
     display_message()
 
@@ -48,7 +49,7 @@ def play_game():
 
     if play == computer:
         print('Tie Score, Please try again')
-        tie_score += 1
+        tie_score = tie_score + 1
 
     else:
         get_score(computer, play)
@@ -65,8 +66,7 @@ def display_message():
     print('1 for Rock 2 for paper or 3 for Scissors. The program will then tell')
     print('you who won the game.')
     print('GOOD LUCK!')
-    print
-    print
+
 
 def get_random():
     import random

@@ -1,0 +1,30 @@
+Required Software
+
+In order to develop and maintain the code for this project, I have started putting together a list of software to install and use. These are all tools under evalution.
+
+version control:
+github
+GitHub is a web based version control for open sourced projects. I use a desktop interface to update, sync, and upload files to the website. 
+
+text editor:
+sublime text
+Sublime, is a text editor with syntax highlighting, which is useful to spot mistakes and understand code. There is some overlap throughout the ide's, as all the programming could be done in sublime theorectically however there are some advantages to using the individual ides.
+
+python distribution:
+anaconda 
+python distribution (packages tools and libraries) is used for scientific computing usually, and installs things to do such kinds of programs without the extensive progress needed to install all of these individually.
+
+python ide:
+spyder  (comes with anaconda) working with both to interepret which is more advantageous to my project.
+ipython (^^^^^)
+
+Arduino development:
+arduino ide 
+drivers
+
+Some of these tools default to using Python 2.7.  I would prefer to use Python 3.4. There are some python libraries I might need to use, I have to find out if they are available for python 3.4
+
+print "hello world"
+
+print("hello")
+

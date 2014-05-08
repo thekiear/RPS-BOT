@@ -1,4 +1,4 @@
-import random module
+#import random module
 import random
 #main function
 def main():
@@ -47,7 +47,7 @@ def user_guess():
         user_guess()
 
 def is_valid_guess(guess):
-    return guess == 'rock' or guess == 'paper' or guess == 'scissors'
+    return guess == 'rock' or guess == 'paper' or guess == 'scissors':
         status = True
     else:
         status = False
