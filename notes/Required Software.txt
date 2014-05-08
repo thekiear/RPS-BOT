@@ -20,11 +20,8 @@ ipython (^^^^^)
 
 Arduino development:
 arduino ide 
+Basic arduino user interfacec
 drivers
+downloaded with arduino program
 
 Some of these tools default to using Python 2.7.  I would prefer to use Python 3.4. There are some python libraries I might need to use, I have to find out if they are available for python 3.4
-
-print "hello world"
-
-print("hello")
-
