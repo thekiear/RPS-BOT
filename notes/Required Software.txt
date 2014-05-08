@@ -17,10 +17,13 @@ python distribution (packages tools and libraries) is used for scientific comput
 python ide:
 spyder  (comes with anaconda) working with both to interepret which is more advantageous to my project.
 ipython (^^^^^)
+Currently in use ide:
+Idle
+Remaining program from old project, also in consideration but unlikely for choice of final interface.
 
 Arduino development:
 arduino ide 
-Basic arduino user interfacec
+Basic arduino user interface
 drivers
 downloaded with arduino program
 

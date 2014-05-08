@@ -1,0 +1,57 @@
+Error Message
+
+Let's play 'Rock, Paper, Scissors'!
+Choose 'rock', 'paper', or 'scissors' by typing that word. rock
+user chooses rock
+Computer chooses paper
+I'm sorry! You lost :(
+Would you like to play again? Enter 'y' for yes or   'n' for no: y
+Let's play 'Rock, Paper, Scissors'!
+Choose 'rock', 'paper', or 'scissors' by typing that word. Scissors
+That response is invalid.
+Choose 'rock', 'paper', or 'scissors' by typing that word. Rock
+That response is invalid.
+Choose 'rock', 'paper', or 'scissors' by typing that word. Paper
+That response is invalid.
+Choose 'rock', 'paper', or 'scissors' by typing that word. PaPeR
+That response is invalid.
+Choose 'rock', 'paper', or 'scissors' by typing that word. paper
+user chooses paper
+Computer chooses rock
+
+Traceback (most recent call last):
+  File "C:\Users\kieran_2\Documents\GitHub\RPS-BOT\brain\first.py", line 86, in <module>
+    main()
+  File "C:\Users\kieran_2\Documents\GitHub\RPS-BOT\brain\first.py", line 84, in main
+    restart()
+  File "C:\Users\kieran_2\Documents\GitHub\RPS-BOT\brain\first.py", line 68, in restart
+    main()
+  File "C:\Users\kieran_2\Documents\GitHub\RPS-BOT\brain\first.py", line 84, in main
+    restart()
+  File "C:\Users\kieran_2\Documents\GitHub\RPS-BOT\brain\first.py", line 68, in restart
+    main()
+  File "C:\Users\kieran_2\Documents\GitHub\RPS-BOT\brain\first.py", line 84, in main
+    restart()
+  File "C:\Users\kieran_2\Documents\GitHub\RPS-BOT\brain\first.py", line 68, in restart
+    main()
+  File "C:\Users\kieran_2\Documents\GitHub\RPS-BOT\brain\first.py", line 84, in main
+    restart()
+  File "C:\Users\kieran_2\Documents\GitHub\RPS-BOT\brain\first.py", line 68, in restart
+    main()
+  File "C:\Users\kieran_2\Documents\GitHub\RPS-BOT\brain\first.py", line 84, in main
+    restart()
+  File "C:\Users\kieran_2\Documents\GitHub\RPS-BOT\brain\first.py", line 68, in restart
+    main()
+  File "C:\Users\kieran_2\Documents\GitHub\RPS-BOT\brain\first.py", line 84, in main
+    restart()
+  File "C:\Users\kieran_2\Documents\GitHub\RPS-BOT\brain\first.py", line 68, in restart
+    main()
+  File "C:\Users\kieran_2\Documents\GitHub\RPS-BOT\brain\first.py", line 84, in main
+    restart()
+  File "C:\Users\kieran_2\Documents\GitHub\RPS-BOT\brain\first.py", line 68, in restart
+    main()
+  File "C:\Users\kieran_2\Documents\GitHub\RPS-BOT\brain\first.py", line 83, in main
+    results(computer_choice, user_choice)
+  File "C:\Users\kieran_2\Documents\GitHub\RPS-BOT\brain\first.py", line 7, in results
+    difference = num - number
+TypeError: unsupported operand type(s) for -: 'int' and 'NoneType'
