@@ -55,3 +55,29 @@ Traceback (most recent call last):
   File "C:\Users\kieran_2\Documents\GitHub\RPS-BOT\brain\first.py", line 7, in results
     difference = num - number
 TypeError: unsupported operand type(s) for -: 'int' and 'NoneType'
+
+
+recreated 
+
+Let's play 'Rock, Paper, Scissors'!
+Choose 'rock', 'paper', or 'scissors' by typing that word. Paper
+That response is invalid.
+Choose 'rock', 'paper', or 'scissors' by typing that word. Paper
+That response is invalid.
+Choose 'rock', 'paper', or 'scissors' by typing that word. Paper
+That response is invalid.
+Choose 'rock', 'paper', or 'scissors' by typing that word. PaPeR
+That response is invalid.
+Choose 'rock', 'paper', or 'scissors' by typing that word. paper
+user chooses paper
+Computer chooses rock
+
+Traceback (most recent call last):
+  File "C:\Users\kieran_2\Documents\GitHub\RPS-BOT\brain\first.py", line 86, in <module>
+    main()
+  File "C:\Users\kieran_2\Documents\GitHub\RPS-BOT\brain\first.py", line 83, in main
+    results(computer_choice, user_choice)
+  File "C:\Users\kieran_2\Documents\GitHub\RPS-BOT\brain\first.py", line 7, in results
+    difference = num - number
+TypeError: unsupported operand type(s) for -: 'int' and 'NoneType'
+>>> 
