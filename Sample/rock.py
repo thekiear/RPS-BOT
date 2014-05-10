@@ -1,0 +1,2 @@
+# rock bot
+output = "R"
