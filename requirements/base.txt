@@ -1,0 +1,3 @@
+#base requirements for all installations
+Django==1.6
+Selenium
