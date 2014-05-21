@@ -1,0 +1,20 @@
+<body>
+    <h1>RPS</h1>
+    <form method="POST">
+        <input name="username" id="id_username" placeholder="Enter your name" />
+        <input name="role" id="id_role" placeholder="Choose 'player' or 'fan'" />
+        <input name="callback_url" id="id_callback_url" placeholder="Enter your Callback url" />
+        {% csrf_token %}
+    </form>
+
+    <table id="id_list_table">
+        <th>
+        	<td>Username</td><td>Role</td><td>Home Page</td>
+        </th>
+        <tr>
+        	<td>{{ new_username }}</td>
+        	<td>{{ new_role }}</td>
+        	<td>{{ new_callback_url }}</td>
+        </tr>
+    </table>
+</body>
