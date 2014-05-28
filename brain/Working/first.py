@@ -1,4 +1,4 @@
-# first test of rps game
+.# first test of rps game
 
 import random
 
