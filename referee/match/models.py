@@ -15,7 +15,7 @@ class UserProfile(models.Model):
         return self.user.username
 
 class Match(models.Model):
-    player1 = models.ForeignKey(User)
+    players = models.ManyToManyField(User)
    # player2 = models.ForeignKey(User)
     pub_date = models.DateTimeField(default=now)
     slug = models.SlugField()

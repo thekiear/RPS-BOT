@@ -1,4 +1,4 @@
 #base requirements for all installations
-Django==1.7
+Django==1.6
 Selenium
-tastypie
+django-tastypie

@@ -2,6 +2,22 @@ from django.shortcuts import render, render_to_response
 from django.template import RequestContext
 from match.forms import UserForm, UserProfileForm
 
+
+def join_match(request):
+
+    context = RequestContext(request)        
+
+    joined = False
+
+    if request.method == 'POST':
+    
+        match_form = MatchForm(data=request.POST)
+
+    return render_to_response(
+            'match.html',
+            {'match_form': match_form, 'profile_form': profile_form, 'registered': registered},
+            context)
+
 def register(request):
     # Like before, get the request's context.
     context = RequestContext(request)
