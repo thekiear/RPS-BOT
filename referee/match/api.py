@@ -1,7 +1,12 @@
 # myapp/api.py
 from tastypie.resources import ModelResource
-from match.models import Match, UserProfile, User
+from match.models import Match, UserProfile, User, MatchRequest
 
+
+class MatchRequestResource(ModelResource):
+	class Meta:
+		queryset = MatchRequest.objects.all()
+		resource_name = 'matchRequest'
 
 class MatchResource(ModelResource):
     class Meta:

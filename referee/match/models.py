@@ -31,3 +31,9 @@ class Match(models.Model):
 
         return super(Entry, self).save(*args, **kwargs)
 
+class MatchRequest(models.Model):
+    player = models.OneToOneField(UserProfile)
+    pub_date = models.DateTimeField(default=now)
+
+    def __unicode__(self):
+        return "this is a matcherequest"

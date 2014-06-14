@@ -1,21 +1,38 @@
 from django.shortcuts import render, render_to_response
 from django.template import RequestContext
-from match.forms import UserForm, UserProfileForm
+from match.forms import UserForm, UserProfileForm, MatchRequestForm
+from match.models import MatchRequest
 
 
 def join_match(request):
 
     context = RequestContext(request)        
-
-    joined = False
-
+    requests = MatchRequest.objects.filter().count() 
+    
     if request.method == 'POST':
     
-        match_form = MatchForm(data=request.POST)
+        matchRequest_form = MatchRequestForm(data=request.POST)
+
+        if matchRequest_form.is_valid():
+
+            #if there is already a match request from another player
+            # then make a match
+            
+
+            matchRequest = matchRequest_form.save()
+
+        # Invalid form or forms - mistakes or something else?
+        # Print problems to the terminal.
+        # They'll also be shown to the user.
+        else:
+            print(matchRequest_form.errors)
+
+    else:
+        matchRequest_form = MatchRequestForm()
 
     return render_to_response(
-            'match.html',
-            {'match_form': match_form, 'profile_form': profile_form, 'registered': registered},
+            'match_request.html',
+            {'matchRequest_form': matchRequest_form, 'requests': requests},
             context)
 
 def register(request):
